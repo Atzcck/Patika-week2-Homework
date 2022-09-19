@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LetsGetStartedActivity">
+
+        <ImageView
+            android:id="@+id/circleBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="-106dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/photo2"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="249dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/photo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/photo1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/photo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <TextView
+            android:id="@+id/text_letsgetstarted"
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="360dp"
+            android:fontFamily="@font/inter"
+            android:gravity="top"
+            android:lineSpacingExtra="-16sp"
+            android:text="@string/let_s_get_started"
+            android:textColor="#000000"
+            android:textFontWeight="900"
+            android:textSize="75sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_growtogether"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="520dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/grow_together"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:id="@+id/joinNowButton"
+            android:layout_width="281dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/join_now"
+            android:fontFamily="@font/inder"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:cornerRadius="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
